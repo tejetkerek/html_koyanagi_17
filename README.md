@@ -5,7 +5,7 @@
 - 配置などはできる限り仕様書通りに、色などは好みのものにしました。
 
 ## ③アプリのデプロイURL
-- （あとで記載）
+- https://tejetkerek.github.io/kadai00_cheese/
 
 ## ④アプリのログイン用IDまたはPassword（ある場合）
 - ID: 今回なし
