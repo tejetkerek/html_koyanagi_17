@@ -1,0 +1,618 @@
+/* ここから下に記載していく */
+
+/* 一番うえのロゴとメニュー */
+.最上段 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: auto;
+    flex-wrap: wrap;         /* 🟩 追加：小さい画面で折り返し可能に */
+    padding: 16px;
+}
+.最上段 img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+}
+
+.menu {
+    display: flex;
+    padding: 50px;
+    gap: 50px;
+} 
+
+.menu h3 a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 12px;
+    display: inline-block;
+    transition: background-color 0.2s, color 0.2s;
+}  
+
+.menu h3 a:hover {
+    background-color: #0078d7;
+    color: white;
+    border-radius: 4px;
+}  
+
+/* メイン画像と2メッセージ重なっているやつ */
+.main-message {
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    line-height: 50px;
+    width: 800px;
+}
+
+@media (max-width: 900px) {
+    .main-message {
+        font-size: 25px;
+    }
+}
+
+.mainvisual {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+.mainvisual img {
+    width: 90%; 
+    height: auto;
+    display: block;
+    margin: 0 auto
+}
+
+.world {
+    font-weight: bolder;
+}
+
+/* ここから4連写真 */
+.images {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.images img {
+    width: 90%;
+    height: auto;
+  }
+
+/* about以下の本文 */
+#about {
+    font-size: 24px;
+    color: #ffd61a;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.チーズアカデミーについて {
+    font-size: 18px;
+    color: #222222;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.チーズ職人養成学校 {
+    font-size: 16px;
+    color: #222222;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.本文1 {
+    font-size: 16px;
+    color: #222222;
+    text-align: center;
+    line-height: 30px;
+}
+.本文2 {
+    font-size: 16px;
+    color: #222222;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.本文3 {
+    font-size: 16px;
+    color: #222222;
+    text-align: center;
+    margin-bottom: 80px;
+    line-height: 30px;
+}
+
+/* COURSE以下の本文 */
+#course {
+    font-size: 24px;
+    color: #222222;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.コース本文 {
+    font-size: 16px;
+    color: #222222;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 60px;
+}
+
+/* ボックス実地研修 */
+.実地研修タイトル {
+    font-size: 18px;
+    font-style: bold;
+    color: #222222;
+    text-align: left;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+
+
+.実地研修本文 {
+    font-size: 16px;
+    color: #222222;
+    text-align: left;
+    line-height: 30px;
+}
+
+@media (max-width: 900px) {
+    .実地研修本文 {
+        font-size: 11px;
+    }
+}
+    
+
+.実地研修全体 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.実地研修Right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    white-space: normal;
+    background-color: #fafafa;
+    padding-left: 50px;
+    width: fit-content;
+}
+
+@media (max-width: 900px) {
+    .実地研修Right {
+        max-width: 350px;
+        padding-left: 20px;
+        flex-wrap: wrap;
+    }
+}
+
+.実地研修写真 img {
+    width: 400px;
+    height: 250px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+    .実地研修写真 img {
+        width: 100%; max-width: 350px;
+        height: 250px;
+    }
+}
+
+/* ボックス知識 */
+.知識タイトル {
+    font-size: 18px;
+    font-style: bold;
+    color: #222222;
+    text-align: right;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+.知識本文 {
+    font-size: 16px;
+    color: #222222;
+    line-height: 30px;
+    align-items: flex-start;
+}
+
+@media (max-width: 900px) {
+    .知識本文 {
+        font-size: 11px;
+    }
+}
+    
+
+.知識全体 {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.知識Left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #fafafa;
+    padding-right: 50px;
+    padding-left: 50px;
+    width: fit-content;
+    white-space: nowrap;
+}
+.知識写真 img {
+    width: 400px;
+    height: 250px;
+    box-sizing: border-box;
+}
+@media (max-width: 900px) {
+    .知識写真 img {
+        width: 100%; max-width: 350px;
+        height: 250px;
+    }
+}
+
+
+/* ボックス卒業制作 */
+.卒業制作タイトル {
+    font-size: 18px;
+    font-style: bold;
+    color: #222222;
+    text-align: left;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+.卒業制作本文 {
+    font-size: 16px;
+    color: #222222;
+    text-align: left;
+    line-height: 30px;
+}
+@media (max-width: 900px) {
+    .卒業制作本文 {
+        font-size: 11px;
+    }
+}
+    
+
+.卒業制作全体 {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.卒業制作Right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #fafafa;
+    padding-left: 50px;
+    width: fit-content;
+    white-space: nowrap;
+}
+.卒業制作写真 img {
+    width: 400px;
+    height: 250px;
+    box-sizing: border-box;
+}
+@media (max-width: 900px) {
+    .卒業制作写真 img {
+        width: 100%; max-width: 350px;
+        height: 250px;
+    }
+}
+
+/* ニュースからアクセスまで*/
+#news {
+    font-size: 24px;
+    color: #ffd61a;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.ニュース {
+    font-size: 16px;
+    color: #222222;
+    text-align: center;
+    margin-bottom: 60px;
+}  
+.日付 {
+    font-size: 16px;
+    color: #222222;
+    text-align: left;
+    margin-bottom: 24px;
+    margin-top: 30px;
+}  
+
+@media (max-width: 900px) {
+    .日付 {
+        font-size: 11px;
+    }
+}
+
+
+.ニュース内容 {
+    font-size: 13px;
+    color: #222222;
+    text-align: left;
+    line-height: 30px;
+}  
+
+@media (max-width: 900px) {
+    .ニュース内容 {
+        font-size: 9px;
+    }
+}
+
+
+.newspic img {
+    width: 300px;
+    height: auto;
+    box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+    .newspic img {
+        width: 100%; max-width: 200px;
+    }
+}
+
+
+.news横並び {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.more {
+    font-size: 18px;
+    color: white;
+    background-color: #ffd61a;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.more:hover {
+    background-color: yellowgreen;
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: all 0.2s ease;
+}  
+
+#access {
+    font-size: 18px;
+    color: #222222;
+    text-align: center;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}  
+.general {
+    font-size: 16px;
+    color: #222222;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}  
+
+.地図上 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 1000px;
+    height: 200px;
+    background-color: #fafafa;
+    margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+    .地図上 {
+        width: 100%;
+    }
+}
+
+
+.map img {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+@media (max-width: 900px) {
+    .map img {
+        width: 100%;
+    }
+}
+
+.左列 {
+    line-height: 30px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column; 
+}
+.右列 {
+    line-height: 30px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.地図下 {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    width: 1000px;
+    height: 200px;
+    background-color: #fafafa;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 0;  
+}
+@media (max-width: 900px) {
+    .地図下 {
+        width: 100%;
+    }
+}
+
+/* コンタクト */
+#contact {
+    font-size: 24px;
+    font-style: bold;
+    color: #222222;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.説明会 {
+    font-size: 16px;
+    color: #222222;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.説明会開催中 {
+    font-size: 16px;
+    color: #222222;
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+.注意書き {
+    font-size: 16px;
+    color: #222222;
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 70px;
+}
+
+/* フォーム */
+
+.inquiry {
+    font-size: 21px;
+    font-style: italic;
+    display: flex; justify-content: center;
+    padding: 10px;
+}
+
+label {
+    width: 300px;
+    display: inline-block;
+    text-align: left;
+}
+
+input[type="text"],
+select {
+    width: 300px;
+    display: inline-block;
+    text-align: left;
+}
+
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    text-align: left;
+}
+
+.form-group {
+    display: flex;
+    width: 1000px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+@media (max-width: 900px) {
+    .form-group {
+        width: 100%;
+    }
+}
+
+.form-group2 {
+    display: flex; flex-direction: column;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+#details {
+    height: 100px;
+    width: 300px;
+}
+
+input[type="text"]:hover {
+    border-color: #0078d7;
+    background-color: #f0f8ff;
+    transition: all 0.2s ease;
+    border-radius: 4px;
+}  
+
+form {
+    border: 1px solid #ccc;        /* 外枠の線 */
+    border-radius: 8px;            /* 少し角丸 */
+    padding: 5px;                 /* 中の余白 */
+    width: fit-content;            /* 中身にあわせる（または width: 600px; などでもOK） */
+    margin: 5px auto;             /* 中央寄せ */
+    background-color: #fff;        /* 白背景（任意） */
+    box-shadow: 0 0 10px rgba(0,0,0,0.05); /* ふんわり影（お好み） */
+}
+
+/* 送信より下 */
+
+.send {
+    font-size: 18px;
+    color: white;
+    background-color: #ffd61a;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    width: 300px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.send:hover {
+    background-color: yellowgreen;
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: all 0.2s ease;
+}  
+
+.copyright {
+    font-size: 16px;
+    color: white;
+    background-color: #707070;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 1000px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 900px) {
+    .copyright {
+        width: 100%;
+    }
+}
+
